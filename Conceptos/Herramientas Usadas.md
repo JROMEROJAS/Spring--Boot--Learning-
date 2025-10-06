@@ -22,5 +22,6 @@ Es especialmente util en el proceso de desarrollo de software cuando se trabaja 
 
 # 📟 Como Creamos Nuestros Primeros Proyectos
 Para la realizacion o creacion de nuestros proyectos utilizaremos una herramienta que se llama **Spring Initializr**.
-- Spring Initializr: Es una herramiena en linea que permite a los desarrolladores crear rapidamente proyectos de aplicaciones Spring Boot personalizados. Al utilizar esta herramienta, los desarrolladores pueden especificar las dependencias, la version de Spring Boot, el lenguaje de programacion (Java, Kotlin, Groovy), el sistema de construccion (Maven o Grandle), y otras configuraciones especificas del proyecto.
-  Una vez que se especifican estas opciones, Spring initializr genera un esqueleto de proyecto listo para usar que puede ser importado en un entorno de desarrollo integrado (IDE) como intelliJ IDEA, Visual Studio Code y demas.
+Es una herramiena en linea que permite a los desarrolladores crear rapidamente proyectos de aplicaciones Spring Boot personalizados. Al utilizar esta herramienta, los desarrolladores pueden especificar las dependencias, la version de Spring Boot, el lenguaje de programacion (Java, Kotlin, Groovy), el sistema de construccion (Maven o Grandle), y otras configuraciones especificas del proyecto.
+
+Una vez que se especifican estas opciones, Spring initializr genera un esqueleto de proyecto listo para usar que puede ser importado en un entorno de desarrollo integrado (IDE) como intelliJ IDEA, Visual Studio Code y demas.
