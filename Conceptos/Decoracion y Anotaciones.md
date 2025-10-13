@@ -63,8 +63,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping("/saludo")  // Define la ruta /saludo
-    public String saludo() {
-        return "¡Hola desde la ruta GET /saludo!";
+```
+
+## 🧩 PostMapping
+La anotacion @PostMapping se utiliza para mapear las solicitudes HTTP POST a metodos de controlador especificos en una aplicacion Spring Boot.
+Esta anotacion es una forma conveniente de especificar que un metodo en nuestro controlador debe ser invocado cuando llega una solicitud POST a una URL especifica.
+Ahora bien,**que es una solicitud POST?**, es uno de los metodos HTTP utilizados para enviar datos a un servidor y crear un nuevo recurso. Cuando se realiza una solicitud del tipo POST, se esta solicitando al servidor que acepte los datos incluidos en el cuerpo de la solicitud y los procese de acuerdo con la logica de la aplicacion.  
+
+```java
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UsuarioController {
+
+    // Define la ruta POST /usuario
+    @PostMapping("/usuario")
+    public String crearUsuario(@RequestBody String nombre) {
+        return "Usuario creado con éxito: " + nombre;
     }
 }
