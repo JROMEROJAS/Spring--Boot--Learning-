@@ -5,7 +5,7 @@ Las cuales actuan como puentes que permiten que aplicaciones y sistemas se comun
 
 Ahora bien, ¿Que siginifica API?, significa **Interfaz de programacion de aplicaciones**. En el contexto de la API, la palabra aplicacion se refiere a cualquier software con un funcion distinta. La interfaz puede considerarse como un contrato de servicio entre dos aplicaciones. Este contrato se define como se comunican entre si mediante solicitudes y respuestas.
 
-## Arquitecturas de una API
+## 🧩 Arquitecturas de una API
 La arquitectura de una API se refiere a las reglas que rigen como se comparten los datos con los clientes. Las API tienen distintos tipos de arquitectura, las cuales suelen explicarse en terminos de cliente servidor. Donde la aplicacion que envia la solicitud se llama cliente, y la que envia la respuesta se llama servidor. 
 
 Una de las arquitecturas mas comunes dentro de una API son:
@@ -15,7 +15,7 @@ Una de las arquitecturas mas comunes dentro de una API son:
 - **REST (EN ESTE CURSO NOS CENTRAREMOS EN ESTA)**
 
 
-## Que es la arquitectura REST?
+## 🧩 Que es la arquitectura REST?
 REST o transferencia de estado representacional, es la arquitectura mas comun para APIs debido a su escalabilidad y facilidad de implementacion. **NOTA:** REST tambien puede denominarse RESTful.
 
 La arquitectura REST esta basada en estandares web que utilizan metodos HTTP (GET, POST, PUT, PATCH, DELETE) para realizar operaciones CRUD (crear, leer, actualizar y eliminar) en recursos que son identificados como URLs.
@@ -37,7 +37,7 @@ Las API REST siguen restricciones claves que indican las reglas y condiciones qu
 
 ------
 
-# Conclusion
+# 📖 Conclusion
 Una API es un conjunto de reglas y definiciones que permite que diferentes aplicaciones se comuniquen entre si.
 
 Mientras que una API REST es un estilo arquitectonico para diseñar redes y servidores web que utiliza el protocolo HTTP para acceder y manipular los recursos. 
