@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.LearningSpring.model.Customer;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
 
 
 @RestController //Indicando que esta clase sera un controllador del tipo rest.
@@ -18,12 +20,23 @@ public class CustomerController {
         new Customer(123, "Juanjo","Jacob", "12345"),
         new Customer(456,"Mateo","Mateus", "1234567"),
         new Customer(789, "Alberto", "Albarito", "1234"),
-        new Customer(000, "Carlos", "Carly", "324")
+        new Customer(987, "Carlos", "Carly", "324")
     ));
 
     //Metodo para ejecutar la lista previamente creada.
     @GetMapping("clientes") //El sufijo que queremos que pertenezca a la URL mediante la cual vamos a buscar la informacion.
     public List<Customer> getCustomers(){
         return customers;
+    }
+
+    //Metodo para poder filtrar a los clientes mediante su usuario o username.
+    @GetMapping("clientes/{username}") //El sufijo que queremos que pertenezca a la URL mediante la cual vamos a buscar la informacion.
+    public Customer getCliente(@PathVariable String username) { 
+        for (Customer c : customers) {
+            if (c.getUsername().equalsIgnoreCase(username)) {
+                return c;
+            }
+        } 
+        return null;
     }
 }
