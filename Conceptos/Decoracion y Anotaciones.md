@@ -139,3 +139,43 @@ public class UsuarioController {
 }
 
 ```
+
+## 🧩 @PutMapping
+La anotacion @PutMapping se utiliza para mapear las solicitudes HTTP del tipo PUT a metodos especificos en controladores de Spring.
+
+Cuando un cliente envia una solicitud HTTP del tipo PUT a una URL especifica en la aplicacion Spring Boot, esta indicando que desea actualizar o reemplazar por completo un recurso en el servidor con los datos proporcionados en el cuerpo de la solicitud. 
+
+Con lo cual, la anotacion @PutMapping dirige la solicitud al metodo correspondiente en el controlador y de esta manera efectuar los cambios correspondientes.
+
+```java
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+// 📘 Controlador para gestionar usuarios
+@RestController
+public class UsuarioController {
+
+    // 🛠️ Actualiza la información de un usuario existente
+    @PutMapping("/usuarios/{id}")
+    public String actualizarUsuario(@PathVariable int id, @RequestBody Usuario usuario)  // @PathVariable Obtiene el ID del usuario desde la URL @RequestBody Usuario usuario y @RequestBody Recibe los datos del usuario desde el cuerpo de la petición.
+     {
+        // Aquí normalmente se actualizaría el usuario en la base de datos
+        return "✅ Usuario con ID " + id + " actualizado correctamente: " + usuario.getNombre();
+     }
+}
+
+// Clase modelo simple para representar un usuario
+class Usuario {
+    private String nombre;
+    private String email;
+
+    // Getters y Setters
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+}
+```
