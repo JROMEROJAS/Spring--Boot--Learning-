@@ -1,7 +1,7 @@
 //Creacion de la estructura de nuestra base de datos e interactua con ella al igual que Repository.
 //Representa una tabla en la base de datos. Son las clases que Spring Data JPA usa para mapear las filas de la base de datos a objetos de Java. 
 
-package com.example.Aprendiendo.entities;
+package com.example.ManejoTareas.entities;
 
 
 import jakarta.persistence.Column;

@@ -52,5 +52,12 @@ public class CustomerController {
         return customer;
     }
 
-    //En este caso vamos a crear el metodo que nos va a permitir poder realizar modificaciones de los recursos que ya  tenemos en el sistemas, en este caso son los 4 clientes que tenemos en la lista.
+    //En este caso vamos a crear el metodo que nos va a permitir poder realizar modificaciones de los recursos que ya tenemos en el sistemas, en este caso son los 4 clientes que tenemos en la lista. 
+    public Customer putCliente(Customer customer) {
+        for(Customer c : customers){
+            if () {
+
+            }
+        }
+    }
 }

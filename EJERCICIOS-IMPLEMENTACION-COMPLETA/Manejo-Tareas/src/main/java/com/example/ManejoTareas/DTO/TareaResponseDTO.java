@@ -6,7 +6,7 @@
 //Este permite exponer solo los campos necesarios, ocultando datos internos de la Entity (como campos de auditoria, contraseñas, o relaciones complejas).
 
 
-package com.example.Aprendiendo.DTO;
+package com.example.ManejoTareas.DTO;
 
 import lombok.Data;
 

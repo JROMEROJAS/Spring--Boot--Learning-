@@ -3,12 +3,12 @@
 //En otras palabras, el service es el mediador que recibe los DTOs del controller, usa el Repository para interactuar con las entities en la base de datos, aplica la logia y devuelve DTOs al controller.
 
 
-package com.example.Aprendiendo.service;
+package com.example.ManejoTareas.service;
 
 import java.util.List;
 
-import com.example.Aprendiendo.DTO.TareaRequestDTO;
-import com.example.Aprendiendo.DTO.TareaResponseDTO;
+import com.example.ManejoTareas.DTO.TareaRequestDTO;
+import com.example.ManejoTareas.DTO.TareaResponseDTO;
 
 public interface TareaService {
     //Crear los metodos que van a definir las operaciones de negocio.

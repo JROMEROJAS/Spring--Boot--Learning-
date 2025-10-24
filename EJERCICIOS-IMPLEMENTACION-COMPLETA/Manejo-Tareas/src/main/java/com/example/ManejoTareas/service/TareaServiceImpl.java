@@ -4,15 +4,16 @@
 
 //El service es la unica capa que conoce tanto al DTO como a la Entity y el Repository. Es responsable de la conversion entre ellos (DTO -> Entity, Entity -> DTO).
 
-package com.example.Aprendiendo.service;
+package com.example.ManejoTareas.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import org.springframework.stereotype.Service;
-import com.example.Aprendiendo.DTO.TareaRequestDTO;
-import com.example.Aprendiendo.DTO.TareaResponseDTO;
-import com.example.Aprendiendo.entities.TareaEntity;
-import com.example.Aprendiendo.respository.TareaRepository;
+
+import com.example.ManejoTareas.DTO.TareaRequestDTO;
+import com.example.ManejoTareas.DTO.TareaResponseDTO;
+import com.example.ManejoTareas.entities.TareaEntity;
+import com.example.ManejoTareas.respository.TareaRepository;
 
 @Service //Marcamos esta clase como un Service de Spring.
 public class TareaServiceImpl implements TareaService {

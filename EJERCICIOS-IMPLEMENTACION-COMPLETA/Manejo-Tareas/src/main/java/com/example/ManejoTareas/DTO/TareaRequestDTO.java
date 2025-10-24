@@ -5,7 +5,7 @@
 //En este caso el RequestDTO se utiliza para recibir datos de las peticiones POST/PUT.
 //Evita que el cliente envie campos que no debe (como el id o la fecha de creacion).
 
-package com.example.Aprendiendo.DTO;
+package com.example.ManejoTareas.DTO;
 
 import lombok.Data;
 

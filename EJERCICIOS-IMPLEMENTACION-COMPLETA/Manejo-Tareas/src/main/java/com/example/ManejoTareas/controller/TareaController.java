@@ -1,7 +1,7 @@
 //La capa de controllers maneja las peticiones HTTP (GET, POST, PUT, DELETE), es el punto de entrada.   
 //Recibe peticiones HTTP(URLs) y devuelve respuestas HTTP.
 
-package com.example.Aprendiendo.controller;
+package com.example.ManejoTareas.controller;
 
 import java.util.List;
 
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.Aprendiendo.DTO.TareaRequestDTO;
-import com.example.Aprendiendo.DTO.TareaResponseDTO;
-import com.example.Aprendiendo.service.TareaService;
+import com.example.ManejoTareas.DTO.TareaRequestDTO;
+import com.example.ManejoTareas.DTO.TareaResponseDTO;
+import com.example.ManejoTareas.service.TareaService;
 
 @RestController //Anota esta clase como un REST Controller
 //@RestController combina @Controller para manejar peticiones y @ResponseBody para que los metodos devuelvan directamente objetos Java que Spring convertira en JSON/XML. 
