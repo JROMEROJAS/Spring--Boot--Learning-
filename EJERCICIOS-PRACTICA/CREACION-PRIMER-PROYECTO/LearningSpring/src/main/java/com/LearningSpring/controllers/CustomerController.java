@@ -51,4 +51,6 @@ public class CustomerController {
         customers.add(customer);
         return customer;
     }
+
+    //En este caso vamos a crear el metodo que nos va a permitir poder realizar modificaciones de los recursos que ya  tenemos en el sistemas, en este caso son los 4 clientes que tenemos en la lista.
 }
