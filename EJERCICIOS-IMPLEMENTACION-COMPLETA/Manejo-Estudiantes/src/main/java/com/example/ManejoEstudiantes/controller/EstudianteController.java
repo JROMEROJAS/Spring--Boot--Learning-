@@ -1,10 +1,12 @@
-package com.example.Aprendiendo2.controller;
+package com.example.ManejoEstudiantes.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.Aprendiendo2.dto.EstudianteRequestDTO;
-import com.example.Aprendiendo2.dto.EstudianteResponseDTO;
-import com.example.Aprendiendo2.service.EstudianteService;
+
+import com.example.ManejoEstudiantes.dto.EstudianteRequestDTO;
+import com.example.ManejoEstudiantes.dto.EstudianteResponseDTO;
+import com.example.ManejoEstudiantes.service.EstudianteService;
+
 import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

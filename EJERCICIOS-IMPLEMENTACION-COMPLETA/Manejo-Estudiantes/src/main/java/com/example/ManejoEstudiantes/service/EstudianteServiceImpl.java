@@ -1,14 +1,14 @@
-package com.example.Aprendiendo2.service;
+package com.example.ManejoEstudiantes.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import com.example.Aprendiendo2.dto.EstudianteRequestDTO;
-import com.example.Aprendiendo2.dto.EstudianteResponseDTO;
-import com.example.Aprendiendo2.entities.EstudianteEntity;
-import com.example.Aprendiendo2.repository.EstudianteRepository;
+import com.example.ManejoEstudiantes.dto.EstudianteRequestDTO;
+import com.example.ManejoEstudiantes.dto.EstudianteResponseDTO;
+import com.example.ManejoEstudiantes.entities.EstudianteEntity;
+import com.example.ManejoEstudiantes.repository.EstudianteRepository;
 
 @Service //Anotacion para marcar esta clase como service.
 public class EstudianteServiceImpl implements EstudianteService {

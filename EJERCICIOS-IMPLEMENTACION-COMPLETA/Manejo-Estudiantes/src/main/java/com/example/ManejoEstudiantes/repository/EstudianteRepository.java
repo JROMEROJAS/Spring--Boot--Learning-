@@ -1,8 +1,9 @@
-package com.example.Aprendiendo2.repository;
+package com.example.ManejoEstudiantes.repository;
 
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.example.Aprendiendo2.entities.EstudianteEntity;
+
+import com.example.ManejoEstudiantes.entities.EstudianteEntity;
 
 
 

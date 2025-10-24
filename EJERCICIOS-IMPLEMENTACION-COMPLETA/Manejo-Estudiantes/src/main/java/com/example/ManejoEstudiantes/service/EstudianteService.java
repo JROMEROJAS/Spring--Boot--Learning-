@@ -1,9 +1,9 @@
-package com.example.Aprendiendo2.service;
+package com.example.ManejoEstudiantes.service;
 
 import java.util.List;
 
-import com.example.Aprendiendo2.dto.EstudianteRequestDTO;
-import com.example.Aprendiendo2.dto.EstudianteResponseDTO;
+import com.example.ManejoEstudiantes.dto.EstudianteRequestDTO;
+import com.example.ManejoEstudiantes.dto.EstudianteResponseDTO;
 
 public interface EstudianteService {
     //Creamos los metodos que van a definir las operaciones de negocio.

@@ -3,7 +3,7 @@
 
 //En este caso el ResponseDTO se usa para enviar datos hacia las respuestas HTTP.
 //Este permite exponer solo los campos necesarios, ocultando datos internos de la Entity (como campos de auditoria, contraseñas, o relaciones complejas).
-package com.example.Aprendiendo2.dto;
+package com.example.ManejoEstudiantes.dto;
 
 import lombok.Data;
 
